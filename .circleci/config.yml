@@ -1,7 +1,4 @@
 version: 2.1
-orbs:
-  node: circleci/node@3.0.0
-  docker: circleci/docker@1.5.0
 jobs:
   build-and-push:
     environment:
@@ -24,6 +21,9 @@ jobs:
       - run:
         command: |
           echo "Digest is: $(</tmp/digest.txt)"
+orbs:
+  node: circleci/node@3.0.0
+  docker: circleci/docker@1.5.0
 workflows:
   my-pipeline:
     jobs:
