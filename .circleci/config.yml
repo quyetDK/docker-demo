@@ -12,8 +12,8 @@ jobs:
       - setup_remote_docker
       - checkout
       - docker/check:
-        docker-username: quyet
-        docker-password: 123456
+        docker-username: DOCKER_LOGIN
+        docker-password: DOCKER_PASSWORD
       - docker/build:
           image: $DOCKER_IMAGE
           tag: $DOCKER_TAG
