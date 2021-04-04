@@ -1,6 +1,6 @@
 version: 2.1
 orbs:
-  node: circleci/node@latest
+  node: circleci/node@3.0.0
   docker: circleci/docker@1.5.0
 jobs:
   build-and-push:
@@ -12,19 +12,20 @@ jobs:
       - setup_remote_docker
       - checkout
       - docker/check:
-        docker-password: 0mhbbnsbtcm
         docker-username: quyet
+        docker-password: 0mhbbnsbtcm
       - docker/build:
           image: $DOCKER_IMAGE
           tag: $DOCKER_TAG
       - docker/push:
           digest-path: /tmp/digest.txt
-          image: my_repo/orb-test
+          image: $DOCKER_IMAGE
+          tag: $DOCKER_TAG
       - run:
           command: |
             echo "Digest is: $(</tmp/digest.txt)"
 workflows:
-  node-tests:
+  my-pipeline:
     jobs:
       - node/test
       - build-and-push:
