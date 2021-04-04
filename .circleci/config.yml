@@ -28,9 +28,9 @@ workflows:
     jobs:
       - node/test
       - build-and-push
+        requeries:
+          - node/test
         filters:
-          requeries:
-            - node/test
           branches:
             only:
               - master
