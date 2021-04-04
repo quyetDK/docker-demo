@@ -39,12 +39,12 @@ workflows:
     jobs:
       - node/test
       - build-and-push:
-          requires:
-            - node/test
-          filters:
-            branches:
-              only:
-                - master
+        requires:
+          - node/test
+        filters:
+          branches:
+            only:
+              - master
       # uncomment the 3 following lines to enable deploying
       # - deploy:
       #     requires:
