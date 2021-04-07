@@ -31,7 +31,7 @@ jobs:
     steps:
       - add_ssh_keys:
           fingerprints:
-            - 93:ce:cb:d0:ec:da:f1:77:90:45:bc:bc:67:fc:93:44
+            - "93:ce:cb:d0:ec:da:f1:77:90:45:bc:bc:67:fc:93:44"
       - run: ssh -oStrictHostKeyChecking=no ubuntu@172.31.40.255 './deploy.sh'
 workflows:
   my-pipeline:
