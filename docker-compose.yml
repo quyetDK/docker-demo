@@ -1,7 +1,7 @@
 version: '3.7'
 services:
   web:
-    image: quyetdk/nhom6-demo-docker
+    image: quyetdk/nhom6-demo-docker:latest
     ports: 
       - "8080:80"
       
