@@ -3,5 +3,5 @@ services:
   web:
     image: quyetdk/nhom6-demo-docker:latest
     ports: 
-      - "8080:80"
+      - "80:80"
       
