@@ -6,7 +6,7 @@ orbs:
 jobs:
   build-and-push:
     environment:
-      DOCKER_IMAGE: quyetdk/nhom6-demo-docker:latest
+      DOCKER_IMAGE: quyetdk/nhom6-demo-docker
       DOCKER_TAG: latest
     executor: docker/docker
     steps:
