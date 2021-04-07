@@ -32,7 +32,7 @@ jobs:
       - add_ssh_keys:
           fingerprints:
             - 4c:3e:61:a7:17:0c:8d:52:bb:54:69:ea:fa:06:e5:f7
-      - run: ssh -oStrictHostKeyChecking=no 172.31.40.255 './deploy.sh'
+      - run: ssh -oStrictHostKeyChecking=no ubuntu@18.191.62.221 './deploy.sh'
 workflows:
   my-pipeline:
     jobs:
