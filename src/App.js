@@ -11,11 +11,9 @@ function App() {
 
         Nguyễn Duy Quyết​ <br />
 
-        Nguyễn Quý​ <br />
+        Nguyễn Ngọc Quý​ <br />
 
-        Phạm Ngọc​ <br />
-
-        Nhàn Friendly <br />
+        Phạm Thị Nhàn <br />
         </p>
         <a
           className="App-link"
