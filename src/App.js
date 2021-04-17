@@ -15,6 +15,7 @@ function App() {
 
         Phạm Thị Nhàn <br />
         </p>
+        <p>Chúng em là nhóm 6 xin chào thầy giáo :Ds</p>
         <a
           className="App-link"
           href="https://reactjs.org"
